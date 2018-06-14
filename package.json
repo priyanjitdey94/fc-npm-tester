@@ -18,5 +18,11 @@
   "homepage": "https://github.com/priyanjitdey94/fc-npm-tester#readme",
   "dependencies": {
     "fusioncharts": "git+ssh://git@bitbucket.org/fusioncharts/fusioncharts-npm.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "eslint": "^4.19.1",
+    "webpack": "^4.12.0"
   }
 }
