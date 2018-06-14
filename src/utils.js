@@ -1,19 +1,19 @@
 function pluckNumber () {
   for (let i = 0; i < arguments.length; i++) {
-      if (!isNaN(+arguments[i])) {
+    if (!isNaN(+arguments[i])) {
       return +arguments[i];
-      }
+    }
   }
-};
+}
 
 function defined (arg) {
   return typeof arg !== 'undefined';
-};
+}
 
 const createData = i => {
   return {
-      'value': i + '',
-      'label': 'label ' + i
+    'value': i + '',
+    'label': 'label ' + i
   };
 };
 

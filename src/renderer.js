@@ -11,7 +11,7 @@ var data = generator.generate({
 
 const isReady = () => {
   var chartInstance = new FusionCharts({
-    id: "stockRealTimeChart",
+    id: 'stockRealTimeChart',
     type: 'column2d',
     renderAt: 'chart-container',
     width: '600',
@@ -20,6 +20,6 @@ const isReady = () => {
     dataSource: data
   });
   chartInstance.render();
-}
+};
 
 FusionCharts.ready(isReady);

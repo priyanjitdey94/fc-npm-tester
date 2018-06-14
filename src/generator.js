@@ -45,7 +45,7 @@ class Generator {
       'numberprefix': '$',
       'showvalues': '1',
       'animation': '1'
-    }
+    };
 
     return this;
   }
@@ -53,6 +53,6 @@ class Generator {
   getData () {
     return getObjectCopy(this.dataSource);
   }
-};
+}
 
 export default Generator;
