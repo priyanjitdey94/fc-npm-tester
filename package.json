@@ -1,0 +1,22 @@
+{
+  "name": "fc-npm-tester",
+  "version": "1.0.0",
+  "description": "Utility to test the npm package of fusioncharts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyanjitdey94/fc-npm-tester.git"
+  },
+  "author": "Priyanjit Dey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/priyanjitdey94/fc-npm-tester/issues"
+  },
+  "homepage": "https://github.com/priyanjitdey94/fc-npm-tester#readme",
+  "dependencies": {
+    "fusioncharts": "git+ssh://git@bitbucket.org/fusioncharts/fusioncharts-npm.git"
+  }
+}
