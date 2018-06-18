@@ -1,6 +1,6 @@
 const { FuseBox } = require('fuse-box');
 const fuse = FuseBox.init({
-  homeDir: 'src',
+  _homeDir: './',
   output: 'dist/bundle.js',
   target: 'browser@es6',
   _useTypescriptCompiler: true,
@@ -13,5 +13,5 @@ const fuse = FuseBox.init({
     main: 'src/renderer.js'
   }
 });
-fuse.bundle('app.js').instructions('> renderer.js');
+fuse.bundle('./dist/app.js').instructions('> ./src/renderer.js');
 fuse.run();

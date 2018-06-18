@@ -1,15 +1,7 @@
 {
-  "minified":true,
-  "env":{
-    "PROD":{
-      "presets": [["es2015", {
-        "targets": { "browsers": ["> 0.1%"] },
-        "loose": true
-      }]],
-      "plugins": [
-        ["syntax-dynamic-import"],
-        ["transform-proto-to-assign"]
-      ]
-    }
-  }
+  "presets": ["es2015"],
+  "plugins": [
+    "syntax-dynamic-import",
+    "external-helpers"
+  ]
 }
