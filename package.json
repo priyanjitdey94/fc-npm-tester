@@ -11,7 +11,8 @@
     "build-steal": "steal-tools",
     "build-brunch": "brunch build --production",
     "build-parcel": "parcel build ./src/renderer.js",
-    "build-bitbundler": "bitbundler"
+    "build-bitbundler": "bitbundler",
+    "build-lasso": "lasso --main ./src/renderer.js --inject-into index.html --development"
   },
   "repository": {
     "type": "git",
@@ -47,6 +48,9 @@
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.9.1",
     "fuse-box": "^3.2.2",
+    "lasso": "^3.1.5",
+    "lasso-babel-transform": "^1.0.2",
+    "lasso-cli": "^2.0.11",
     "parcel-bundler": "^1.9.0",
     "rollup": "^0.60.7",
     "rollup-plugin-babel": "^3.0.4",
