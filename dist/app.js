@@ -1,5 +1,7 @@
 (function(FuseBox){FuseBox.$fuse$=FuseBox;
 FuseBox.target = "browser";
+// allowSyntheticDefaultImports
+FuseBox.sdep = true;
 FuseBox.pkg("fc-npm-tester", {}, function(___scope___){
 ___scope___.file("renderer.js", function(exports, require, module, __filename, __dirname){
 
