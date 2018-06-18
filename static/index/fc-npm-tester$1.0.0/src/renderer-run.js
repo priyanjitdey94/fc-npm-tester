@@ -1,0 +1,1 @@
+$_mod.run("/fc-npm-tester$1.0.0/src/renderer");

@@ -1,0 +1,3 @@
+{
+    "body": "<script src=\"%STATIC_PATH%/index/lasso-modules-client$2.0.5/src/index.js\"></script>\n<script src=\"%STATIC_PATH%/index/fc-npm-tester$1.0.0/src/renderer.js\"></script>\n<script src=\"%STATIC_PATH%/index/fc-npm-tester$1.0.0/src/renderer-run.js\"></script>\n<script>$_mod.ready();</script>"
+}
