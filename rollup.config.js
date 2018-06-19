@@ -1,6 +1,6 @@
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
-import json from 'rollup-plugin-json';
+// import json from 'rollup-plugin-json';
 import babel from 'rollup-plugin-babel';
 // import uglify from 'rollup-plugin-uglify';
 
@@ -15,10 +15,10 @@ export default {
   experimentalDynamicImport: true,
   experimentalCodeSplitting: true,
   plugins: [
-    json(),
+    // json(),
     resolve(),
+    commonjs(),
     babel(),
-    commonjs()
     // uglify()
   ]
 };

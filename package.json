@@ -5,14 +5,15 @@
   "main": "./src/renderer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint ./src/*.js --fix",
-    "build-webpack": "webpack",
-    "build-rollup": "./node_modules/.bin/rollup -c",
-    "build-steal": "steal-tools",
-    "build-brunch": "brunch build --production",
-    "build-parcel": "parcel build ./src/renderer.js",
-    "build-bitbundler": "bitbundler",
-    "build-lasso": "lasso --main ./src/renderer.js --inject-into index.html --development"
+    "lint": "eslint ./src/*.js --fix",
+    "webpack": "webpack",
+    "rollup": "rollup -c",
+    "steal": "steal-tools",
+    "brunch": "brunch build --production",
+    "parcel": "parcel build ./parcel.html",
+    "fuse-box": "rm -rf .fusebox/ && node fuse.js",
+    "bitbundler": "bitbundler",
+    "lasso": "lasso --main ./src/renderer.js --inject-into index.html --development"
   },
   "repository": {
     "type": "git",

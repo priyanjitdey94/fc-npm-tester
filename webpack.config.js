@@ -17,13 +17,9 @@ module.exports = {
         ],
 
         // Only run `.js` and `.jsx` files through Babel
-        test: /\.js?$/,
+        test: /\.js?$/
 
         // Options to configure babel with
-        query: {
-          // plugins: ['transform-runtime'],
-          presets: ['env'],
-        }
       }
     ]
   },

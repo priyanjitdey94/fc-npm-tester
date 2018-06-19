@@ -1,13 +1,13 @@
 import FusionCharts from 'fusioncharts/core';
 import column2d from 'fusioncharts/viz/column2d';
-import Generartor from './generator';
+// import Generartor from './generator';
 
 FusionCharts.addDep(column2d);
 
-var generator = new Generartor();
-var data = generator.generate({
-  dataCount: 12
-}).getData();
+// var generator = new Generartor();
+// var data = generator.generate({
+//   dataCount: 12
+// }).getData();
 
 const isReady = () => {
   var chartInstance = new FusionCharts({
@@ -17,9 +17,12 @@ const isReady = () => {
     width: '600',
     height: '350',
     dataFormat: 'json',
-    dataSource: data
+    dataSource: {data: [{value: 5}, {value: 9}, {value: 7}]}
   });
   chartInstance.render();
 };
+
+// Expose fusioncharts to window
+window.FusionCharts = FusionCharts;
 
 FusionCharts.ready(isReady);
