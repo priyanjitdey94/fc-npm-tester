@@ -1,4 +1,5 @@
 const { FuseBox } = require('fuse-box');
+
 const fuse = FuseBox.init({
   _homeDir: './',
   output: './dist/',
@@ -7,11 +8,8 @@ const fuse = FuseBox.init({
   allowSyntheticDefaultImports: true,
   log: {
     showBundledFiles: true
-  },
-  package: {
-    name: 'fc-npm-tester',
-    main: 'src/renderer.js'
   }
 });
+
 fuse.bundle('./dist/bundle.js').instructions('> ./src/renderer.js');
 fuse.run();
